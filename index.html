@@ -9,13 +9,29 @@
 	<h1>ChatGPT</h1>
 	<div id="textField" class="col-12">
 	  <form action="action.php" method="post">
-		<label for="text" class="form-label">ChatGPTへの質問 :  </label>
-		<input type="text" name="text" placeholder="">
-		<button type="submit" class="btn btn-primary">送信</button>
+		<label for="text" class="form-label"></label>
+		<input id="request" type="text" name="text" placeholder="">
+		<button type="submit" class="btn btn-primary">Send</button>
 	  </form>
 	</div>
+	<div id="Edit">
+	  <p>Format</p>
+	  <button id="MarkDown" type="button" class="btn btn-outline-primary">MarkDown</button>
+	  <button id="HTML" type="button" class="btn btn-outline-primary">HTML</button>
+	  <button id="CSV" type="button" class="btn btn-outline-primary">CSV</button>
+	  <button id="JSON" type="button" class="btn btn-outline-primary">JSON</button>
+	</div>
+
+	<div id="Option">
+	  <p>Option</p>
+	  <button id="Simple" type="button" class="btn btn-outline-primary">簡潔に</button>
+	  <button id="Bullet" type="button" class="btn btn-outline-primary">箇条書き</button>
+	  <button id="Paper" type="button" class="btn btn-outline-primary">論文</button>
+	</div>
+
 </body>
 	<script src="dist/js/bootstrap.bundle.min.js"></script>
 	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/Style.css" rel="stylesheet">
+	<script src="js/edit.js"></script>
 </html>
