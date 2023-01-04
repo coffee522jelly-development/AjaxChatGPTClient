@@ -36,7 +36,7 @@ btnSimple.addEventListener('click', () => {
 });
 
 const btnBullet = document.getElementById('Bullet');
-btnSimple.addEventListener('click', () => {
+btnBullet.addEventListener('click', () => {
     let txt = input.value;
     txt += 'この結果を箇条書きで説明して欲しい。';
     input.value = txt;

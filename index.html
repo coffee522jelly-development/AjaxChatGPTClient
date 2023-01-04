@@ -9,24 +9,25 @@
 	<h1>ChatGPT</h1>
 	<div id="textField" class="col-12">
 	  <form action="action.php" method="post">
-		<label for="text" class="form-label"></label>
-		<input id="request" type="text" name="text" placeholder="">
-		<button type="submit" class="btn btn-primary">Send</button>
-	  </form>
+		<div class="input-group input-group-lg mb-3">
+			<input type="text" class="form-control" placeholder="質問内容" aria-label="質問内容" aria-describedby="button-addon2">
+			<button class="btn btn-outline-secondary" type="submit" id="button-addon2">Send(送信)</button>
+		</div>	  
+	　</form>
 	</div>
 	<div id="Edit">
-	  <p>Format</p>
-	  <button id="MarkDown" type="button" class="btn btn-outline-primary">MarkDown</button>
-	  <button id="HTML" type="button" class="btn btn-outline-primary">HTML</button>
-	  <button id="CSV" type="button" class="btn btn-outline-primary">CSV</button>
-	  <button id="JSON" type="button" class="btn btn-outline-primary">JSON</button>
+	  <p>Format(形式)</p>
+	  <button id="MarkDown" type="button" class="btn btn-lg btn-outline-primary">MarkDown</button>
+	  <button id="HTML" type="button" class="btn btn-lg btn-outline-primary">HTML</button>
+	  <button id="CSV" type="button" class="btn btn-lg btn-outline-primary">CSV</button>
+	  <button id="JSON" type="button" class="btn btn-lg btn-outline-primary">JSON</button>
 	</div>
 
 	<div id="Option">
 	  <p>Option</p>
-	  <button id="Simple" type="button" class="btn btn-outline-primary">簡潔に</button>
-	  <button id="Bullet" type="button" class="btn btn-outline-primary">箇条書き</button>
-	  <button id="Paper" type="button" class="btn btn-outline-primary">論文</button>
+	  <button id="Simple" type="button" class="btn btn-lg btn-outline-primary">簡潔に</button>
+	  <button id="Bullet" type="button" class="btn btn-lg btn-outline-primary">箇条書き</button>
+	  <button id="Paper" type="button" class="btn btn-lg btn-outline-primary">論文</button>
 	</div>
 
 </body>
